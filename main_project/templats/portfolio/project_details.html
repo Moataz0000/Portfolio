@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{% block content %}
+
+
+<style>
+  .form-layout {
+      max-width: 1000px;
+      margin: 0 auto;
+  }
+  .cta-info h4 {
+      margin-bottom: 1rem;
+  }
+</style>
+<div class="container bg-light shadow-md p-5 form-layout">
+  <br>
+
+  <div class="cta-info w-100">
+      <h4 class="display-4 fw-bold">Project Details</h4>
+      <hr style="border: 1px solid #000; margin: 20px 0;">
+
+      <h4 class="display-3--brief"><b>Name:</b> <b style="color:green;">{{ details.name }}</b></h4>
+      <h4 class="display-3--brief"><b>Category:</b> <b style="color:green;">{{ details.category }}</b></h4>
+      <h4 class="display-3--brief"><b>Demo:</b> <a href='{{ details.demo }}' target='_blank' style="color:blue;">Demo Here</a></h4>
+
+      <h4 class="display-1--brief"><b>Description:</h4><p>{{ details.description }}</p>
+      <hr>
+      <img src="{{ details.image.url }}" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+  </div>
+
+  <br>
+  <br>
+</div>
+
+
+{% endblock content %}
+
+
+
+

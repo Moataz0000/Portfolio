@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{% block content %}
+
+
+<style>
+  .form-layout {
+      max-width: 1000px;
+      margin: 0 auto;
+  }
+  .cta-info h4 {
+      margin-bottom: 1rem;
+  }
+</style>
+<div class="container bg-light shadow-md p-5 form-layout text-center">
+  <br>  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h1><b>Oops!</b> The page you are looking for does not exist.</h1>
+  <a href="{% url 'portfolio:main' %}" class="btn btn-outline-success "><b style="color: rgb(0, 0, 0);">Return </b><i class="fas fa-arrow-circle-left"></i></a>
+
+
+  <br>
+  <br>  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</div>
+
+
+{% endblock content %}
+
+
+
+
